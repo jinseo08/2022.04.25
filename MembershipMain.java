@@ -24,10 +24,12 @@ public class MembershipMain {
 
 		member1.update("010-1004-1004");
 	
+		// 스캐너없이 매개변수로 로그인 성공 여부 확인
 		member1.memberLogin2("mozzi","1004");
 		member2.memberLogin2("kjs1","1004");
 		
-		Scanner scan = new Scanner(System.in);
+		// 스캐너로 아이디,비밀번호 입력 후 로그인 성공 여부 확인
+		Scanner scan =new Scanner(System.in);
 		System.out.print("아이디 : ");
 		String memberid = scan.nextLine();
 		System.out.print("비밀번호 : ");

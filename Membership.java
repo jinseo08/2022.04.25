@@ -41,6 +41,7 @@ public class Membership {
 	매개변수 : String 2개
 	*/
 	
+	// 스캐너로 아이디,비밀번호 받은 후 처리
 	boolean memberLogin(String memberid, String memberpw) {
 		boolean result = false;
 		if(this.memberid.equals(memberid) && this.memberpw.equals(memberpw)){
@@ -51,7 +52,7 @@ public class Membership {
 		return result;
 	}
 	
-	
+	// 스캐너 없이 매개변수에 받을 경우
 	void memberLogin2(String memberid, String memberpw) {
 		if(this.memberid.equals(memberid) && this.memberpw.equals(memberpw)){
 			System.out.println("로그인 성공");
